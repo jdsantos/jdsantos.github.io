@@ -7,6 +7,7 @@ headerImage: true
 tag:
 - maplibre
 - measurements
+- opensource
 star: false
 category: project
 author: jdsantos
