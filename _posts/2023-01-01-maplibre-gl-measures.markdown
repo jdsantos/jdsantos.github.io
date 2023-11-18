@@ -16,7 +16,7 @@ author: jdsantos
 description: A MapLibre GL JS plugin for taking length measures with lines and area measures with polygons
 ---
 
-![maplibre-gl-measures][/assets/images/projects/1.png]
+![maplibre-gl-measures](/assets/images/projects/1.png)
 <figcaption class="caption">maplibre-gl-measures</figcaption>
 
 # maplibre-gl-measures
