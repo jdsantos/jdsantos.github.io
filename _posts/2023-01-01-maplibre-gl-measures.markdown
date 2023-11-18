@@ -4,6 +4,8 @@ layout: post
 date: 2023-01-01 23:00
 image: /assets/images/projects/1.png
 headerImage: true
+projects: true
+hidden: true
 tag:
 - maplibre
 - measurements
