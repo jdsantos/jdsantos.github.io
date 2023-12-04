@@ -2,7 +2,7 @@
 title: "Rebooting"
 layout: post
 date: 2023-01-04 23:00
-image: /assets/images/20230104/1.png
+image: /assets/images/20231204/1.png
 headerImage: true
 tag:
 - restart
