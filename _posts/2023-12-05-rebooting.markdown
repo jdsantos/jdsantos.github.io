@@ -22,7 +22,7 @@ But why did my other attempts fail? Did I overthink? Was I afraid of having no a
 
 Whoops, that's a lot of questions, but don't mind my manners. I didn't even introduce myself.
 
-<span class="evidence">Hi there. Welcome to my dev blog.</span> 
+<span class="evidence text-center">Hi there. Welcome to my dev blog.</span> 
 
 My name is Jorge Santos, I'm 34 years old and I'm a software developer happily living in Valongo, Portugal. I'm a husband to a lovely wife and a proud father to an awesome son.
 
@@ -48,7 +48,7 @@ I absolutely loved it.
 
 That decision made at 14 years old, took me down a path that unveiled itself before my eyes: I then entered college (ISEP IPP) to study Informatics Engineering (BSc) and then got my Software Engineering degree (MSc) and loved every single *bit*.
 
-My merit and interest in these studies gave me opportunities at prestigious companies like INESCTEC and 3Maps, which I grasped with all my strength and will.
+My merit and interest in these studies gave me opportunities at prestigious companies like [INESCTEC](https://www.inesctec.pt) and [3Maps](https://www.3maps.pt), which I grasped with all my strength and will.
 
 ![ZX Spectrum](/assets/images/posts/20231205/2.png)
 
