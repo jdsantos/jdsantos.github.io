@@ -7,7 +7,7 @@ headerImage: true
 tag:
 - restart
 - reboot
-star: false
+star: true
 category: blog
 author: jdsantos
 description: Why I started writing this blog
@@ -22,7 +22,9 @@ But why did my other attempts fail? Did I overthink? Was I afraid of having no a
 
 Whoops, that's a lot of questions, but don't mind my manners. I didn't even introduce myself.
 
-*Hi there. Welcome to my dev blog*. My name is Jorge Santos, I'm 34 years old and I'm a software developer happily living in Valongo, Portugal. I'm a husband to a lovely wife and a proud father to an awesome son.
+<span class="evidence">Hi there. Welcome to my dev blog.</span> 
+
+My name is Jorge Santos, I'm 34 years old and I'm a software developer happily living in Valongo, Portugal. I'm a husband to a lovely wife and a proud father to an awesome son.
 
 
 ## 🥷 a little something about myself
@@ -50,6 +52,8 @@ My merit and interest in these studies gave me opportunities at prestigious comp
 
 ![ZX Spectrum](/assets/images/posts/20231205/2.png)
 
+<div class="breaker"></div>
+
 ## 🔄 rebooting, ok, but of what?
 
 Throughout all these years of programming, I've read tons of blogs, forums, Q&A platforms, messaging systems, newsletters, podcasts... you name it.
@@ -61,10 +65,14 @@ Now I see clearly what was my initial problem: I was too concerned about what ot
 
 So now, let's hope that I maintain consistency and that this reboot can last as long as the system works.
 
+<div class="breaker"></div>
+
 ## ❔why now?
 
 As a software developer and overall tech nerd, my daily routine consists of reading lots of forums, blogs, posts, and Q&As about programming, problem-solving, or market-related topics. In this constant exploration, I came across an interesting post on [Medium](https://betterprogramming.pub/advices-from-a-software-engineer-with-8-years-of-experience-8df5111d4d55) that got me thinking: you should never leave the work marketplace and you should always seek to promote yourself. That way, you are always assessing your value, and putting yourself to the test. A good idea to promote your work nowadays is by writing about tech: keeps you on your toes because you must know the topic you're discussing very well. Along the way, you might even learn something new.
 For me especially, it will work as a developer journey log for when I miss a special time or moment in my professional life.
+
+<div class="breaker"></div>
 
 ## 🤓 who is it meant for?
 
