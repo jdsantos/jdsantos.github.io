@@ -22,7 +22,7 @@ But why did my other attempts fail? Did I overthink? Was I afraid of having no a
 
 Whoops, that's a lot of questions, but don't mind my manners. I didn't even introduce myself.
 
-<span class="evidence text-center">Hi there. Welcome to my dev blog.</span> 
+<div class="evidence text-center" style="font-size:2.5rem;font-weight:bolder;padding: 40px 0;">👋 Hi there. Welcome to my dev blog.</div>
 
 My name is Jorge Santos, I'm 34 years old and I'm a software developer happily living in Valongo, Portugal. I'm a husband to a lovely wife and a proud father to an awesome son.
 
@@ -79,4 +79,4 @@ For me especially, it will work as a developer journey log for when I miss a spe
 As mentioned before, the main audience of this blog will be me in the first place! 
 But of course, if this reaches someone and can cause a positive impact, I hope it reaches passionate developers like myself.
 
-That's a wrap for now, hope I didn't waste your time and hope to hear from you soon.
+That's a wrap for now, hope I didn't waste your time and hope to hear from you soon ❤️
