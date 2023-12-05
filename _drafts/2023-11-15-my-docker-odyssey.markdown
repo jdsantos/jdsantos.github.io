@@ -7,7 +7,7 @@ headerImage: true
 tag:
 - docker
 - containers
-star: true
+star: false
 category: blog
 author: jdsantos
 description: How i got into Docker
