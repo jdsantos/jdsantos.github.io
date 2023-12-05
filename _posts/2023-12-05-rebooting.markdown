@@ -8,6 +8,7 @@ tag:
 - restart
 - reboot
 star: true
+hidden: false
 category: blog
 author: jdsantos
 description: Why I started writing this blog
