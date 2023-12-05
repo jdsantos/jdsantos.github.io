@@ -26,8 +26,6 @@ Whoops, that's a lot of questions, but don't mind my manners. I didn't even intr
 
 ## a little something about myself
 
-![ZX Spectrum](/assets/images/posts/20231205/2.png)
-
 This is not going to be another "How I Met Your Mother" story, but still, I consider that this is relevant for you to understand my perspectives.
 I'm the youngest of three brothers, from a typical Portuguese working-class family. We had a happy but challenging childhood, and with *hard work and huge sacrifice*, my parents got my brothers and me the chance to go to school for as long as we possibly could.
 Early in my childhood, my experience with what you may call a "computer" began when I first played Bomberman on my middle brother's ZX Spectrum (as many of my age probably did). At that time, my brother gave me my first programming lesson ever:
