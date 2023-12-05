@@ -1,14 +1,13 @@
 ---
 title: "Rebooting"
 layout: post
-date: 2023-12-05 23:00
+date: 2023-11-15 23:00
 image: /assets/images/posts/20231205/1.png
 headerImage: true
 tag:
 - restart
 - reboot
-star: true
-hidden: false
+star: false
 category: blog
 author: jdsantos
 description: Why I started writing this blog
@@ -26,7 +25,7 @@ Whoops, that's a lot of questions, but don't mind my manners. I didn't even intr
 *Hi there. Welcome to my dev blog*. My name is Jorge Santos, I'm 34 years old and I'm a software developer happily living in Valongo, Portugal. I'm a husband to a lovely wife and a proud father to an awesome son.
 
 
-## a little something about myself
+## 🥷 a little something about myself
 
 This is not going to be another "How I Met Your Mother" story, but still, I consider that this is relevant for you to understand my perspectives.
 I'm the youngest of three brothers, from a typical Portuguese working-class family. We had a happy but challenging childhood, and with *hard work and huge sacrifice*, my parents got my brothers and me the chance to go to school for as long as we possibly could.
@@ -51,7 +50,7 @@ My merit and interest in these studies gave me opportunities at prestigious comp
 
 ![ZX Spectrum](/assets/images/posts/20231205/2.png)
 
-## now, rebooting is ok, but of what?
+## 🔄 rebooting, ok, but of what?
 
 Throughout all these years of programming, I've read tons of blogs, forums, Q&A platforms, messaging systems, newsletters, podcasts... you name it.
 From reading all those sources, especially platforms like Medium, Dev.to or Hackernoon, it became obvious that I wanted to share my views and personal experience about tech like many others did. The blogs that I read weren't always on point, but at least they dared to put down in writing their perspective.
@@ -62,12 +61,12 @@ Now I see clearly what was my initial problem: I was too concerned about what ot
 
 So now, let's hope that I maintain consistency and that this reboot can last as long as the system works.
 
-## why now?
+## ❔why now?
 
 As a software developer and overall tech nerd, my daily routine consists of reading lots of forums, blogs, posts, and Q&As about programming, problem-solving, or market-related topics. In this constant exploration, I came across an interesting post on [Medium](https://betterprogramming.pub/advices-from-a-software-engineer-with-8-years-of-experience-8df5111d4d55) that got me thinking: you should never leave the work marketplace and you should always seek to promote yourself. That way, you are always assessing your value, and putting yourself to the test. A good idea to promote your work nowadays is by writing about tech: keeps you on your toes because you must know the topic you're discussing very well. Along the way, you might even learn something new.
 For me especially, it will work as a developer journey log for when I miss a special time or moment in my professional life.
 
-## Who is it meant for?
+## 🤓 who is it meant for?
 
 As mentioned before, the main audience of this blog will be me in the first place! 
 But of course, if this reaches someone and can cause a positive impact, I hope it reaches passionate developers like myself.
