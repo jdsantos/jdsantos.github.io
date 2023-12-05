@@ -13,6 +13,7 @@ author: jdsantos
 description: Why I started writing this blog
 ---
 
+
 > Rebooting? Did you ever have a blog or something like this before? Why now? What is this blog all about? Who is it meant for?
 
 To be fully honest with who may be reading this, I had these exact questions when writing this first post. As if somehow, even before any good or bad keystroke, in the end, this like my other previous attempts seemed already doomed to failure.
@@ -46,6 +47,8 @@ I absolutely loved it.
 That decision made at 14 years old, took me down a path that unveiled itself before my eyes: I then entered college (ISEP IPP) to study Informatics Engineering (BSc) and then got my Software Engineering degree (MSc) and loved every single *bit*.
 
 My merit and interest in these studies gave me opportunities at prestigious companies like INESCTEC and 3Maps, which I grasped with all my strength and will.
+
+![ZX Spectrum](/assets/images/posts/20231205/2.png)
 
 ## now, rebooting is ok, but of what?
 
