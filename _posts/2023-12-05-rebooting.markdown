@@ -1,7 +1,7 @@
 ---
 title: "Rebooting"
 layout: post
-date: 2023-11-15 23:00
+date: 2023-12-05 20:00
 image: /assets/images/posts/20231205/1.png
 headerImage: true
 tag:
