@@ -26,7 +26,7 @@ Whoops, that's a lot of questions, but don't mind my manners. I didn't even intr
 
 ## a little something about myself
 
-![alt text](/assets/images/posts/20231205/1.png)
+![ZX Spectrum](/assets/images/posts/20231205/2.png)
 
 This is not going to be another "How I Met Your Mother" story, but still, I consider that this is relevant for you to understand my perspectives.
 I'm the youngest of three brothers, from a typical Portuguese working-class family. We had a happy but challenging childhood, and with *hard work and huge sacrifice*, my parents got my brothers and me the chance to go to school for as long as we possibly could.
