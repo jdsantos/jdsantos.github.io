@@ -18,6 +18,8 @@ I am a highly motivated, self-learning and passionate developer, fully able to b
 
 E-mail me at jorgedmsantos«at»gmail«dot»com or you can send me a message on [~~Twitter~~ X](https://x.com/jdsantos89)
 
+---
+
 ### 🧰 PROJECTS
 
 * **3Shorex - Plataforma de gestão e controlo das operações de shorex em zonas portuárias** <br>
@@ -74,6 +76,7 @@ PT2020 - BIMMS, IC-FEUP, LNEC, INESC TEC, IST, BUILT CoLAB, UMinho, IP, Mota-Eng
 * **SigAve 2.0 - Plataforma de visualização e gestão de informação geográfica** <br>
 2010 — 2013
 
+---
 
 ### 💼 EXPERIENCE
 
@@ -97,10 +100,14 @@ to acquire or boost their businesses, internal processes, IT knowledge or data
 workflows.<br>
 _Spring / Liferay MVC; Qt Framework; C++; PHP; jQuery; PostgreSQL; Plone/Python;_
 
+---
+
 ### 🎓 EDUCATION
 
 * **MSC** – GRAPHIC SYSTEMS AND MULTIMEDIA • 2013 • [ISEP IPP](https://www.isep.ipp.pt/)
 * **BSC** – INFORMATICS ENGINEERING • 2010 • [ISEP IPP](https://www.isep.ipp.pt/)
+
+---
 
 ### 🎓 PUBLICATIONS
 
@@ -120,11 +127,15 @@ L Oliveira, J Santos, L Dias <br>
 J Santos<br>
 PQDT-Global, 2013
 
+---
+
 ### 🌍 LANGUAGES
 
 * 🇵🇹 Portuguese – Native or Bilingual
 
 * 🇬🇧 English – Native or Bilingual
+
+---
 
 ### 🚴 HOBBIES
 
