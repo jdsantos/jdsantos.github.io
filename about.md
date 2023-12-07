@@ -20,6 +20,40 @@ E-mail me at jorgedmsantos«at»gmail«dot»com or you can send me a message on 
 
 ---
 
+### 💼 EXPERIENCE
+
+* **SENIOR FULL STACK DEVELOPER • [3MAPS](https://www.3maps.pt) • OCTOBER 2013 - PRESENT** <br>
+Senior Full Stack Developer, building rich web platforms and services with spatial context 
+(Geographic Information Systems or GIS) for various domains, such as Port 
+Authorities and Municipalities.<br>
+<div class="tech-badges">
+<img src="https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D" alt="Vue.js">
+<img src="https://img.shields.io/badge/Vuetify-1867C0?style=for-the-badge&logo=vuetify&logoColor=AEDDFF" alt="Vuetify">
+<img src="https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
+<img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="NodeJS">
+<img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+<img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgres">
+<img src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white" alt=".NET">
+<img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle">
+<img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
+<img src="https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white" alt="Redis">
+</div>
+
+* **ASSOCIATE RESEARCHER • [INESC TEC](https://www.inesctec.pt) • OCTOBER 2013 - MARCH 2020** <br>
+As an associate researcher at INESC TEC i am allocated to several R&D projects 
+related to Geographical Information Systems at the Computer Graphics and 
+Information Systems Center of INESC TEC.
+
+* **RESEARCHER/FULL STACK DEVELOPER• INESC TEC • OCTOBER 2010 - 2013** <br>
+Researcher/full-stack developer for INESC 
+Tecnology and Science (formerly INESCPorto), developing web and desktop 
+applications for various entities that required the R&D expertise of INESCTEC either 
+to acquire or boost their businesses, internal processes, IT knowledge or data 
+workflows.<br>
+_Spring / Liferay MVC; Qt Framework; C++; PHP; jQuery; PostgreSQL; Plone/Python;_
+
+---
+
 ### 🧰 PROJECTS
 
 * **3Shorex - Plataforma de gestão e controlo das operações de shorex em zonas portuárias** <br>
@@ -75,41 +109,6 @@ PT2020 - BIMMS, IC-FEUP, LNEC, INESC TEC, IST, BUILT CoLAB, UMinho, IP, Mota-Eng
 
 * **SigAve 2.0 - Plataforma de visualização e gestão de informação geográfica** <br>
 2010 — 2013
-
----
-
-### 💼 EXPERIENCE
-
-* **SENIOR FULL STACK DEVELOPER • [3MAPS](https://www.3maps.pt) • OCTOBER 2013 - PRESENT** <br>
-I joined 3Maps in 2013 and have been working there since as a Senior Full Stack 
-Developer, building rich web platforms and services with spatial context 
-(Geographic Information Systems or GIS) for various domains, such as Port 
-Authorities and Municipalities.<br>
-<div class="tech-badges">
-<img src="https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D" alt="Vue.js">
-<img src="https://img.shields.io/badge/Vuetify-1867C0?style=for-the-badge&logo=vuetify&logoColor=AEDDFF" alt="Vuetify">
-<img src="https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
-<img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="NodeJS">
-<img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
-<img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgres">
-<img src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white" alt=".NET">
-<img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle">
-<img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
-<img src="https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white" alt="Redis">
-</div>
-
-* **ASSOCIATE RESEARCHER • [INESC TEC](https://www.inesctec.pt) • OCTOBER 2013 - MARCH 2020** <br>
-As an associate researcher at INESC TEC i am allocated to several R&D projects 
-related to Geographical Information Systems at the Computer Graphics and 
-Information Systems Center of INESC TEC.
-
-* **RESEARCHER/FULL STACK DEVELOPER• INESC TEC • OCTOBER 2010 - 2013** <br>
-I started my career back in 2010 as a researcher/full-stack developer for INESC 
-Tecnology and Science (formerly INESCPorto), developing web and desktop 
-applications for various entities that required the R&D expertise of INESCTEC either 
-to acquire or boost their businesses, internal processes, IT knowledge or data 
-workflows.<br>
-_Spring / Liferay MVC; Qt Framework; C++; PHP; jQuery; PostgreSQL; Plone/Python;_
 
 ---
 
