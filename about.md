@@ -12,6 +12,8 @@ I joined [3Maps](http://www.3maps.pt "3Maps's website")  in 2013 and have been w
 
 I am a highly motivated, self-learning and passionate developer, fully able to build applications from the backend to the frontend side of things. I consider myself to be a web enthusiast, thriving to learn more, a team player and above all a people person.
 
+<div class="breaker"></div>
+
 ### 📧 HOW TO REACH ME
 
 E-mail me at jorgedmsantos«at»gmail«dot»com or you can send me a message on [~~Twitter~~ X](https://x.com/jdsantos89)
