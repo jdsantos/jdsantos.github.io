@@ -109,7 +109,7 @@ _Spring / Liferay MVC; Qt Framework; C++; PHP; jQuery; PostgreSQL; Plone/Python;
 
 ---
 
-### 🎓 PUBLICATIONS
+### 📚 PUBLICATIONS 
 
 * **[A web & mobile city maintenance reporting solution](https://doi.org/10.1016/j.protcy.2013.12.025)** <br>
 J Santos, F Rodrigues, L Oliveira <br>
