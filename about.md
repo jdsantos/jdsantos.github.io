@@ -16,8 +16,8 @@ layout: page
         <td class="value-col">Porto, Portugal</td>
     </tr>
     <tr>
-        <td>Current position</td>
-        <td class="value-col">Senior Full Stack developer</td>
+        <td>Position</td>
+        <td class="value-col">🥷 Senior Full Stack developer</td>
     </tr>
     <tr>
         <td>Experience</td>
