@@ -26,7 +26,7 @@ url: https://jdsantos.github.io
 permalink: /:title/
 
 # To enable google analytics, supply your token below
-analytics-google: 'UA-112107560-1'
+analytics-google: 'G-KPBWTK3Y0K'
 
 # if you don't want comments in your posts, leave categories empty
 disqus:
