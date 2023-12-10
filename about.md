@@ -4,8 +4,6 @@ layout: page
 ---
 ![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
 
-## TL;DR
-
 <table class="resume-info">
     <tr>
         <td>Age</td>
