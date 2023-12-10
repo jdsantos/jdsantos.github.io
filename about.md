@@ -29,7 +29,18 @@ layout: page
 
 <div class="breaker"></div>
 
-## Bio
+#### Get there fast
+
+- [Bio](#-bio)
+- [How to reach me](#-how-to-reach-me)
+- [Experience](#-experience)
+- [Projects](#-projects)
+- [Education](#-education)
+- [Publications](#-publications)
+- [Languages](#-languages)
+- [Hobbies](#-hobbies)
+
+## 👨 Bio
 
 I started my career back in 2010 as a researcher/full-stack developer for [INESC Tecnology and Science (formerly INESCPorto)](https://www.inesctec.pt "INESCTEC's website"), developing web and desktop applications for various entities that required the R&D expertise of INESCTEC either to acquire or boost their businesses, internal processes, IT knowledge or data workflows.
 
