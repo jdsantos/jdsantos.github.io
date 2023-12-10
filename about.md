@@ -6,6 +6,16 @@ layout: page
 
 ## TL;DR
 
+|  |  |
+| :---- | :---- |
+| Age | **34** |
+| Location | **Porto, Portugal** |
+| Current position | **Senior Full Stack developer** |
+| Experience | **13 years** |
+| Tech stack | <div class="tech-stack"><img src="https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D" alt="Vue.js"><img src="https://img.shields.io/badge/Vuetify-1867C0?style=for-the-badge&logo=vuetify&logoColor=AEDDFF" alt="Vuetify"><img src="https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel"><img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="NodeJS"><img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"><img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgres"><img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript"><img src="https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white" alt="Redis"><img src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP"></div> |
+
+## Bio
+
 I started my career back in 2010 as a researcher/full-stack developer for [INESC Tecnology and Science (formerly INESCPorto)](https://www.inesctec.pt "INESCTEC's website"), developing web and desktop applications for various entities that required the R&D expertise of INESCTEC either to acquire or boost their businesses, internal processes, IT knowledge or data workflows.
 
 I joined [3Maps](http://www.3maps.pt "3Maps's website")  in 2013 and have been working there since as a Senior Full Stack Developer, building rich web platforms and services with spatial context (Geographic Information Systems or GIS) for various domains, such as Port Authorities and Municipalities.
@@ -151,6 +161,7 @@ PQDT-Global, 2013
 ### 🚴 HOBBIES
 
 * 🌲 Outdoor activities
+* ✈️ Travel
 * 🚴 **Cycling** 
 * 🏃 Running
 * ⚽ Soccer
