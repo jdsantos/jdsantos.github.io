@@ -27,9 +27,7 @@ layout: page
     </tr>
 </table>
 
-<div class="breaker"></div>
-
-#### Get there fast
+#### ⚡Get there fast
 
 - [Bio](#-bio)
 - [How to reach me](#-how-to-reach-me)
@@ -39,6 +37,8 @@ layout: page
 - [Publications](#-publications)
 - [Languages](#-languages)
 - [Hobbies](#-hobbies)
+
+<div class="breaker"></div>
 
 ## 👨 Bio
 
