@@ -1,7 +1,7 @@
 ---
 title: "Laravel 10 + NGINX + PHP-FPM - my ready to use all in one recipe for your Laravel 10 deployment in Docker"
 layout: post
-date: 2023-02-17 20:00
+date: 2024-02-17 20:00
 image: /assets/images/posts/20240217/1.png
 headerImage: true
 tag:
