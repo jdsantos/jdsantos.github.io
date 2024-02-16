@@ -81,18 +81,7 @@ command=php /opt/laravel/artisan queue:work --sleep=3 --tries=3 --backoff=3 --ma
 nginx is my choice in terms of serving content and handling incoming requests. The configuration is also very simple, and with these few lines, I got it working just fine:
 
 ```
-server {
-    listen 80;
-    root /opt/laravel/public;
 
-    index index.php index.html index.htm;
-
-    location / {
-        try_files $uri $uri/ /index.php?$query_string;
-        gzip_static on;
-    }
-
-    location ~ \.php$ {
         try_files $uri =404;
         fastcgi_split_path_info ^(.+\.php)(/.+)$;
         fastcgi_pass localhost:9000;
@@ -109,14 +98,7 @@ server {
         fastcgi_buffer_size 64k;
         fastcgi_busy_buffers_size 128k;
         fastcgi_temp_file_write_size 128k;
-    }
-
-    error_page 404 /index.php;
-    error_page 500 502 503 504 /50x.html;
-    location = /50x.html {
-        root /usr/share/nginx/html;
-    }
-}
+    
 ```
 
 ## ⚡ php-fpm: a good php process manager
@@ -134,7 +116,6 @@ pm.max_children = 5
 pm.start_servers = 2
 pm.min_spare_servers = 1
 pm.max_spare_servers = 3
-access.format = "[php-fpm] [%t] %m %{REQUEST_SCHEME}e://%{HTTP_HOST}e%{REQUEST_URI}e took:%ds mem:%{mega}Mmb cpu:%C%% status:%s {%{REMOTE_ADDR}e|%{HTTP_USER_AGENT}e}"
 ```
 
 > Notice that although the 127.0.0.1 ip address seems harcoded, it works fine as the nginx + php-fpm run inside of the same container (no need for complicated networking here...)
