@@ -12,7 +12,6 @@ tag:
     - phpfpm
     - nginx
 star: false
-hidden: true
 category: blog
 author: jdsantos
 description: An easy to use and production ready configuration for your Laravel project with Alpine + NGINX + PHP-FPM + OPCache 
