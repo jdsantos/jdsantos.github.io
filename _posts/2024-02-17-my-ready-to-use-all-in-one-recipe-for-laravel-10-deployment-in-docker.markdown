@@ -26,7 +26,7 @@ If you are on a hurry, you can find this on my github repo [LANPOD - Laravel + A
 
 ## 🤯 but why? why when there are so many options?
 
-You're absolutely right. There are a lot of options out there with ready to use base images, **lots and lots** of configurations out of the box, but at least to me they all of them were a bit too much: either they packed a lot of stuff I didn't need, or they required lots of tunning to be able to run my apps accordingly to my clients requirements. Some of them were really heavy weight images 🥊, and extending them was also hard.
+You're absolutely right. There are a lot of options out there with ready to use base images, **lots and lots** of configurations out of the box, but at least to me all of them were a bit too much: either they packed a lot of stuff I didn't need, or they required lots of tunning to be able to run my apps accordingly to my clients requirements. Some of them were really heavy weight images 🥊, and extending them was also hard.
 
 That is why I prefered to build these small docker images, that pack the absolute minimum to run my Laravel apps, using the proven php-fpm on a base lightweight Alpine image, merged together with NGINX so that you can make the configuration an absolute breeze. I also packed supervisor and opcache that I usually use in my deployments.
 
