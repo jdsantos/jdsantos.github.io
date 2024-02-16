@@ -121,7 +121,7 @@ pm.max_spare_servers = 3
 > Notice that although the 127.0.0.1 ip address seems harcoded, it works fine as the nginx + php-fpm run inside of the same container (no need for complicated networking here...)
 
 
-## 🔥 opcache: my frontend server of choice
+## 🔥 opcache: speedy requests
 
 In production environments you should use OPCache so that PHP doesn't need to load up and parse your PHP scripts on each request.
 
