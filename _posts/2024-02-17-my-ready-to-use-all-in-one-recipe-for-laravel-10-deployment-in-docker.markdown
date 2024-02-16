@@ -19,7 +19,7 @@ description: An easy to use and production ready configuration for your Laravel 
 
 Hi there! It's Jorge. Is it just me, or did January felt like it had 90 days or so? Well, nevermind. Let's dive right in on what brought you here.
 
-In this post, I'm continuing on the Docker + Laravel theme but now on a diferent topic: _my deployment strategy for either on premise or cloud Laravel apps using containerization_.
+In this post, I'm continuing on the Docker + Laravel theme but now on a diferent topic: **my deployment strategy for either on premise or cloud Laravel apps using containerization**.
 
 If you are on a hurry, you can find this on my github repo [LANPOD - Laravel + Alpine + Nginx + PHP-FPM + OPCache + Docker](https://github.com/jdsantos/laravel-alpine-nginx-phpfpm-opcache-docker) and on your way there please  leave a star on this repo ⭐! Thanks in advance!
 
