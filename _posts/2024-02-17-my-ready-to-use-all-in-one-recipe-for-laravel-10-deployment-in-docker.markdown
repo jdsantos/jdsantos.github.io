@@ -140,8 +140,6 @@ opcache.interned_strings_buffer=16
 opcache.fast_shutdown=1
 ``` 
 
-## 
-
 You can find this on my github repo [LANPOD - Laravel + Alpine + Nginx + PHP-FPM + OPCache + Docker](https://github.com/jdsantos/laravel-alpine-nginx-phpfpm-opcache-docker) and on your way there please  leave a star on this repo ⭐! Thanks in advance!
 
 ## 💻 Environment
