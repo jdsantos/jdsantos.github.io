@@ -158,9 +158,9 @@ PT2020 - BIMMS, IC-FEUP, LNEC, INESC TEC, IST, BUILT CoLAB, UMinho, IP, Mota-Eng
 
 ### 📚 PUBLICATIONS 
 
-* **[A web & mobile city maintenance reporting solution](https://doi.org/10.1016/j.protcy.2013.12.025)** <br>
-J Santos, F Rodrigues, L Oliveira <br>
-Procedia Technology 9, 226-235, 2013
+* **[Digital Twin 3d Platform for Collaborative Representation and Editing of Ifc Documents Applied to the Bim Methodology](https://doi.org/10.5194/isprs-archives-XLVIII-4-W1-2022-411-2022)** <br>
+Joao Pedro Silva, Joao Paulo Pereira, Jorge Santos <br>
+Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci., XLVIII-4/W1-2022, 2022
 
 * **[Digital Twin for Monitoring Containerized Hazmat Cargo in Port Areas](https://doi.org/10.23919/CISTI54924.2022.9820434)** <br>
 L Oliveira, M Castro, R Ramos, J Santos, J Silva, L Dias <br>
@@ -169,6 +169,10 @@ L Oliveira, M Castro, R Ramos, J Santos, J Silva, L Dias <br>
 * **[GeoSpatial platform for port management processes](https://doi.org/10.1109/CISTI.2016.7521573)** <br>
 L Oliveira, J Santos, L Dias <br>
 11th Iberian Conference on Information Systems and Technologies (CISTI), 2016
+
+* **[A web & mobile city maintenance reporting solution](https://doi.org/10.1016/j.protcy.2013.12.025)** <br>
+J Santos, F Rodrigues, L Oliveira <br>
+Procedia Technology 9, 226-235, 2013
 
 * **[Pré-processamento e Tag automático de imagens em ambiente móvel e web, aplicado a um sistema de informação geográfica](http://hdl.handle.net/10400.22/5836)** <br>
 J Santos<br>
