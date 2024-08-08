@@ -58,7 +58,7 @@ E-mail me at jorgedmsantos«at»gmail«dot»com or you can send me a message on 
 
 ### 💼 EXPERIENCE
 
-* **SENIOR FULL STACK DEVELOPER • [3MAPS](https://www.3maps.pt) • OCTOBER 2013 - PRESENT** <br>
+*  ![3MAPS](/assets/images/companies/3maps.jpg) **SENIOR FULL STACK DEVELOPER • [3MAPS](https://www.3maps.pt) • OCTOBER 2013 - PRESENT** <br>
 Senior Full Stack Developer, building rich web platforms and services with spatial context 
 (Geographic Information Systems or GIS) for various domains, such as Port 
 Authorities and Municipalities.<br>
@@ -76,12 +76,12 @@ Authorities and Municipalities.<br>
 <img src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
 </div>
 
-* **ASSOCIATE RESEARCHER • [INESC TEC](https://www.inesctec.pt) • OCTOBER 2013 - MARCH 2020** <br>
+* ![INESCTEC](/assets/images/companies/inesctec.jpg) **ASSOCIATE RESEARCHER • [INESC TEC](https://www.inesctec.pt) • OCTOBER 2013 - MARCH 2020** <br>
 As an associate researcher at INESC TEC i am allocated to several R&D projects 
 related to Geographical Information Systems at the Computer Graphics and 
 Information Systems Center of INESC TEC.
 
-* **RESEARCHER/FULL STACK DEVELOPER• INESC TEC • OCTOBER 2010 - 2013** <br>
+* ![INESCTEC](/assets/images/companies/inesctec.jpg) **RESEARCHER/FULL STACK DEVELOPER• INESC TEC • OCTOBER 2010 - 2013** <br>
 Researcher/full-stack developer for INESC 
 Tecnology and Science (formerly INESCPorto), developing web and desktop 
 applications for various entities that required the R&D expertise of INESCTEC either 
@@ -151,8 +151,8 @@ PT2020 - BIMMS, IC-FEUP, LNEC, INESC TEC, IST, BUILT CoLAB, UMinho, IP, Mota-Eng
 
 ### 🎓 EDUCATION
 
-* **MSC** – GRAPHIC SYSTEMS AND MULTIMEDIA • 2013 • [ISEP IPP](https://www.isep.ipp.pt/)
-* **BSC** – INFORMATICS ENGINEERING • 2010 • [ISEP IPP](https://www.isep.ipp.pt/)
+* ![ISEP](/assets/images/companies/isep.jpg) **MSC** – GRAPHIC SYSTEMS AND MULTIMEDIA • 2013 • [ISEP IPP](https://www.isep.ipp.pt/)
+* ![ISEP](/assets/images/companies/isep.jpg) **BSC** – INFORMATICS ENGINEERING • 2010 • [ISEP IPP](https://www.isep.ipp.pt/)
 
 ---
 
