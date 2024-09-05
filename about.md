@@ -58,7 +58,7 @@ E-mail me at jorgedmsantos«at»gmail«dot»com or you can send me a message on 
 
 ### 💼 EXPERIENCE
 
-* <img src="/assets/images/companies/3maps.jpg" alt="3Maps" class="company_logo"> **SENIOR FULL STACK DEVELOPER • [3MAPS](https://www.3maps.pt) • OCTOBER 2013 - PRESENT** <br>
+* <img src="/assets/images/companies/3maps.jpg" alt="3Maps" class="company_logo"> **SENIOR FULL STACK DEVELOPER • [3MAPS](https://www.3maps.pt) • OCTOBER 2013 - JULY 2024** <br>
 Senior Full Stack Developer, building rich web platforms and services with spatial context 
 (Geographic Information Systems or GIS) for various domains, such as Port 
 Authorities and Municipalities.<br>
