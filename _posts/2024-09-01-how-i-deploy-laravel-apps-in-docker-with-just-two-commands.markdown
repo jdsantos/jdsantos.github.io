@@ -52,20 +52,15 @@ This recipe allows you to deploy your app in a redistributable, virtualized, os 
 
 **Something was off.**
 
-hile LANPOD as a template repository on Github was a helpful starting point for a brand new Laravel app, and a **LOT** better than having to go about wiring virtualization over and over again on the same structured apps, it was completely useless to an already existing/legacy project. You would have to **MANUALLY** extract the recipe’s files and directories of the bunch of other stuff, and adapt them to your needs. As it was meant to be a template-only repository, it didn’t include right out of the box any native database support (because if it did, it would have to include all of them in the same image), and if an update to the configuration was needed, it would be hell on earth just to know how and what to change in your project.
+While LANPOD as a template repository on Github was a helpful starting point for a brand new Laravel app, and a **LOT** better than having to go about wiring virtualization over and over again on the same structured apps, it was completely useless to an already existing/legacy project. You would have to **MANUALLY** extract the recipe’s files and directories of the bunch of other stuff, and adapt them to your needs. As it was meant to be a template-only repository, it didn’t include right out of the box any native database support (because if it did, it would have to include all of them in the same image), and if an update to the configuration was needed, it would be hell on earth just to know how and what to change in your project.
 
 ## 💊The solution
 
 Having felt this pain myself enough times already, especially when having to add by hand the database dependencies to the Dockerfile/Containerfile over and over again, I realized: how cool would it be to have this recipe as a dependency in my projects, in such a way that is easy peasy to install, uninstall and update in the future?
 
-
-<div style="text-align:center">
-
 > **"That's it! I'm going to create a Laravel package that I can install in my projects! Let's do this!"**
 
 ![Adventure gif](/assets/images/posts/20240906/2.gif)
-
-</div>
 
 So, the adventure began!
 
@@ -78,6 +73,8 @@ With all this in place, the rest was peanuts: I used all of [LANPOD](https://git
 ![Terminal UI](/assets/images/posts/20240906/3.png)
 
 After launching Laradocker inside your project, the installer will guide you through the necessary steps to build the proper dependencies in the image, such as database connectivity support and you are done! 
+
+![Databases](/assets/images/posts/20240906/4.png)
 
 All files get generated in an instant and copied into your project!
 
