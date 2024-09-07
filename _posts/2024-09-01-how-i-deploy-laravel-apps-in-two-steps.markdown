@@ -78,7 +78,7 @@ After launching Laradocker inside your project, the installer will guide you thr
 
 All files get generated in an instant and copied into your project!
 
-## The code
+## 👨‍💻The code
 
 This package is completely free & open-source and **[you can find the source code here!](https://github.com/jdsantos/laradocker)**. On your way there, please leave a star ⭐ on the repo to show your support. 
 
