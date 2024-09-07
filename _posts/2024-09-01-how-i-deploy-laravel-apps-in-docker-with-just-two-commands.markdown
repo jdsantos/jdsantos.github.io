@@ -20,7 +20,7 @@ Hi there! It's Jorge. It's been a while since my last post, and this one might s
 
 ## ⚡TL;DR
 
-In case you are in a hurry, [this is the link to the Github repository for the Laradocker project](https://github.com/jdsantos/laradocker), a brand new composer package that sets up your Laravel project with Docker with just these two simple commands:
+Tired of configuring Docker from scratch for every Laravel project? [This is the link to the Github repository for the Laradocker project](https://github.com/jdsantos/laradocker), a brand new composer package that sets up your Laravel project with Docker with just these two simple commands:
 
 
 ```bash
