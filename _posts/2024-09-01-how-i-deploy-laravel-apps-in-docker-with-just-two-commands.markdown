@@ -42,7 +42,7 @@ Thanks in advance ❤️
 
 ## 📜The backstory
 
-In my [previous post](https://jdsantos.github.io/my-ready-to-use-all-in-one-recipe-for-laravel-10-deployment-in-docker), I brought you [LANPOD](https://github.com/jdsantos) a Laravel/Docker deployment strategy that allows you to deliver a Laravel app on-premise or cloud environments relying on a battle tested tech recipe consisting of **laravel + alpine linux + nginx + php-fpm + opcache + docker** you absolutely loved.
+In my [previous post](https://jdsantos.github.io/my-ready-to-use-all-in-one-recipe-for-laravel-10-deployment-in-docker), I brought you [LANPOD](https://github.com/jdsantos/laravel-alpine-nginx-phpfpm-opcache-docker) a Laravel/Docker deployment strategy that allows you to deliver a Laravel app on-premise or cloud environments relying on a battle tested tech recipe consisting of **laravel + alpine linux + nginx + php-fpm + opcache + docker** you absolutely loved.
 
 This recipe allows you to deploy your app in a redistributable, virtualized, os agnostic, self-contained and self-configured software image and run it in virtualization engines such as [Docker](https://docker.com) or [Podman](https://podman.io). It even includes things out of the box like the supervisor's tidy configuration for handling your queues, nice defaults for php, opcache and php-fpm, nginx, etc.
 
