@@ -7,7 +7,7 @@ layout: page
 <table class="resume-info">
     <tr>
         <td>Age</td>
-        <td class="value-col">34</td>
+        <td class="value-col">35</td>
     </tr>
     <tr>
         <td>Location</td>
@@ -15,11 +15,11 @@ layout: page
     </tr>
     <tr>
         <td>Position</td>
-        <td class="value-col">🥷 Senior Full Stack developer</td>
+        <td class="value-col">🥷 Software Engineer</td>
     </tr>
     <tr>
         <td>Experience</td>
-        <td class="value-col">13 years</td>
+        <td class="value-col">14 years</td>
     </tr>
     <tr>
         <td>Tech stack</td>
@@ -44,7 +44,9 @@ layout: page
 
 I started my career back in 2010 as a researcher/full-stack developer for [INESC Tecnology and Science (formerly INESCPorto)](https://www.inesctec.pt "INESCTEC's website"), developing web and desktop applications for various entities that required the R&D expertise of INESCTEC either to acquire or boost their businesses, internal processes, IT knowledge or data workflows.
 
-I joined [3Maps](http://www.3maps.pt "3Maps's website")  in 2013 and have been working there since as a Senior Full Stack Developer, building rich web platforms and services with spatial context (Geographic Information Systems or GIS) for various domains, such as Port Authorities and Municipalities.
+I then worked at [3Maps](https://3maps.pt) between 2013 - 2024 as a Senior Full Stack Developer, building rich web platforms and services with spatial context (Geographic Information Systems or GIS) for various domains, such as Port Authorities and Municipalities. 
+
+In 2024 I joined [Critical Techworks](https://www.criticaltechworks.com) as a Rockstar Developer to take part on a mission to change the way the world moves.
 
 I am a highly motivated, self-learning and passionate developer, fully able to build applications from the backend to the frontend side of things. I consider myself to be a web enthusiast, thriving to learn more, a team player and above all a people person.
 
