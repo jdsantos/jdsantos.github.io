@@ -1,6 +1,6 @@
 # main text of home
 title: Jorge Santos
-bio: 🥷 Web | 🗺️ Maps | 🚲 Cycling
+bio: 🥷 Web | 🚘 Cars | 🚲 Cycling
 
 # twitter summary info
 description: Random notes on software development
@@ -55,7 +55,7 @@ medium: jorgedsantos
 authors:
   jdsantos:
         name: Jorge Santos
-        bio: 🥷 Web | 🗺️ Maps | 🚲 Cycling
+        bio: 🥷 Web | 🚘 Cars | 🚲 Cycling
         external-image: false
         picture: assets/images/profile.jpg
         twitter: jdsantos89
