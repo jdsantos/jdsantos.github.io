@@ -60,6 +60,18 @@ E-mail me at jorgedmsantos«at»gmail«dot»com or you can send me a message on 
 
 ### 💼 EXPERIENCE
 
+* <img src="/assets/images/companies/criticaltechworks.jpg" alt="Critical Techworks" class="company_logo"> **ROCKSTAR DEVELOPER • [Critical Techworks](https://www.criticaltechworks.com) • OCTOBER 2024 - PRESENT** <br>
+Rockstar Developer on a mission to change the way the world moves 🚘<br>
+<div class="tech-badges">
+<img src="https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D" alt="Vue.js">
+<img src="https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS">
+<img src="https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform">
+<img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="NodeJS">
+<img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="Typescript">
+<img src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes">
+</div>
+
 * <img src="/assets/images/companies/3maps.jpg" alt="3Maps" class="company_logo"> **SENIOR FULL STACK DEVELOPER • [3MAPS](https://www.3maps.pt) • OCTOBER 2013 - JULY 2024** <br>
 Senior Full Stack Developer, building rich web platforms and services with spatial context 
 (Geographic Information Systems or GIS) for various domains, such as Port 
