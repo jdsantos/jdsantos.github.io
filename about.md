@@ -95,7 +95,7 @@ As an associate researcher at INESC TEC i am allocated to several R&D projects
 related to Geographical Information Systems at the Computer Graphics and 
 Information Systems Center of INESC TEC.
 
-* <img src="/assets/images/companies/inesctec.jpg" alt="INESCTEC" class="company_logo"> **RESEARCHER/FULL STACK DEVELOPER• INESC TEC • OCTOBER 2010 - 2013** <br>
+* <img src="/assets/images/companies/inesctec.jpg" alt="INESCTEC" class="company_logo"> **RESEARCHER/FULL STACK DEVELOPER• [INESC TEC](https://www.inesctec.pt) • OCTOBER 2010 - 2013** <br>
 Researcher/full-stack developer for INESC 
 Tecnology and Science (formerly INESCPorto), developing web and desktop 
 applications for various entities that required the R&D expertise of INESCTEC either 
