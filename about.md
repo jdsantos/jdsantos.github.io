@@ -60,7 +60,7 @@ E-mail me at jorgedmsantos«at»gmail«dot»com or you can send me a message on 
 
 ### 💼 EXPERIENCE
 
-* <img src="/assets/images/companies/criticaltechworks.jpg" alt="Critical Techworks" class="company_logo"> **ROCKSTAR DEVELOPER • [Critical Techworks](https://www.criticaltechworks.com) • OCTOBER 2024 - PRESENT** <br>
+<img src="/assets/images/companies/criticaltechworks.jpg" alt="Critical Techworks" class="company_logo"> **ROCKSTAR DEVELOPER • [Critical Techworks](https://www.criticaltechworks.com) • OCTOBER 2024 - PRESENT** <br>
 Rockstar Developer on a mission to change the way the world moves 🚘<br>
 <div class="tech-badges">
 <img src="https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D" alt="Vue.js">
@@ -72,7 +72,7 @@ Rockstar Developer on a mission to change the way the world moves 🚘<br>
 <img src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes">
 </div>
 
-* <img src="/assets/images/companies/3maps.jpg" alt="3Maps" class="company_logo"> **SENIOR FULL STACK DEVELOPER • [3MAPS](https://www.3maps.pt) • OCTOBER 2013 - JULY 2024** <br>
+<img src="/assets/images/companies/3maps.jpg" alt="3Maps" class="company_logo"> **SENIOR FULL STACK DEVELOPER • [3MAPS](https://www.3maps.pt) • OCTOBER 2013 - JULY 2024** <br>
 Senior Full Stack Developer, building rich web platforms and services with spatial context 
 (Geographic Information Systems or GIS) for various domains, such as Port 
 Authorities and Municipalities.<br>
@@ -90,12 +90,12 @@ Authorities and Municipalities.<br>
 <img src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
 </div>
 
-* <img src="/assets/images/companies/inesctec.jpg" alt="INESCTEC" class="company_logo"> **ASSOCIATE RESEARCHER • [INESC TEC](https://www.inesctec.pt) • OCTOBER 2013 - MARCH 2020** <br>
+<img src="/assets/images/companies/inesctec.jpg" alt="INESCTEC" class="company_logo"> **ASSOCIATE RESEARCHER • [INESC TEC](https://www.inesctec.pt) • OCTOBER 2013 - MARCH 2020** <br>
 As an associate researcher at INESC TEC i am allocated to several R&D projects 
 related to Geographical Information Systems at the Computer Graphics and 
 Information Systems Center of INESC TEC.
 
-* <img src="/assets/images/companies/inesctec.jpg" alt="INESCTEC" class="company_logo"> **RESEARCHER/FULL STACK DEVELOPER• [INESC TEC](https://www.inesctec.pt) • OCTOBER 2010 - 2013** <br>
+<img src="/assets/images/companies/inesctec.jpg" alt="INESCTEC" class="company_logo"> **RESEARCHER/FULL STACK DEVELOPER• [INESC TEC](https://www.inesctec.pt) • OCTOBER 2010 - 2013** <br>
 Researcher/full-stack developer for INESC 
 Tecnology and Science (formerly INESCPorto), developing web and desktop 
 applications for various entities that required the R&D expertise of INESCTEC either 
