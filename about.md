@@ -165,12 +165,9 @@ PT2020 - BIMMS, IC-FEUP, LNEC, INESC TEC, IST, BUILT CoLAB, UMinho, IP, Mota-Eng
 
 ### 🎓 EDUCATION
 
-<div class="academic-entry">
 <img src="/assets/images/companies/isep.jpg" alt="ISEP" class="company_logo"> **MSC** – GRAPHIC SYSTEMS AND MULTIMEDIA • 2013 • [ISEP IPP](https://www.isep.ipp.pt/)
-</div>
-<div class="academic-entry">
+
 <img src="/assets/images/companies/isep.jpg" alt="ISEP" class="company_logo"> **BSC** – INFORMATICS ENGINEERING • 2010 • [ISEP IPP](https://www.isep.ipp.pt/)
-</div>
 ---
 
 ### 📚 PUBLICATIONS 
