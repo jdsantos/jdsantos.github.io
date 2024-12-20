@@ -60,6 +60,7 @@ E-mail me at jorgedmsantos«at»gmail«dot»com or you can send me a message on 
 
 ### 💼 EXPERIENCE
 
+<div class="company-entry">
 <img src="/assets/images/companies/criticaltechworks.jpg" alt="Critical Techworks" class="company_logo"> **ROCKSTAR DEVELOPER • [Critical Techworks](https://www.criticaltechworks.com) • OCTOBER 2024 - PRESENT** <br>
 Rockstar Developer on a mission to change the way the world moves 🚘<br>
 <div class="tech-badges">
@@ -71,7 +72,9 @@ Rockstar Developer on a mission to change the way the world moves 🚘<br>
 <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="Typescript">
 <img src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes">
 </div>
+</div>
 
+<div class="company-entry">
 <img src="/assets/images/companies/3maps.jpg" alt="3Maps" class="company_logo"> **SENIOR FULL STACK DEVELOPER • [3MAPS](https://www.3maps.pt) • OCTOBER 2013 - JULY 2024** <br>
 Senior Full Stack Developer, building rich web platforms and services with spatial context 
 (Geographic Information Systems or GIS) for various domains, such as Port 
@@ -89,7 +92,9 @@ Authorities and Municipalities.<br>
 <img src="https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white" alt="Redis">
 <img src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
 </div>
+</div>
 
+<div class="company-entry">
 <img src="/assets/images/companies/inesctec.jpg" alt="INESCTEC" class="company_logo"> **ASSOCIATE RESEARCHER • [INESC TEC](https://www.inesctec.pt) • OCTOBER 2013 - MARCH 2020** <br>
 As an associate researcher at INESC TEC i am allocated to several R&D projects 
 related to Geographical Information Systems at the Computer Graphics and 
@@ -102,6 +107,7 @@ applications for various entities that required the R&D expertise of INESCTEC ei
 to acquire or boost their businesses, internal processes, IT knowledge or data 
 workflows.<br>
 _Spring / Liferay MVC; Qt Framework; C++; PHP; jQuery; PostgreSQL; Plone/Python;_
+</div>
 
 ---
 
