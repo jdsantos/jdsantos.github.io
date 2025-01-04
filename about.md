@@ -198,6 +198,7 @@ PQDT-Global, 2013
 ### 🌍 LANGUAGES
 
 🇵🇹 Portuguese – Native or Bilingual
+
 🇬🇧 English – Native or Bilingual
 
 ---
