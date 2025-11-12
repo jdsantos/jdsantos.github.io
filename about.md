@@ -7,7 +7,13 @@ layout: page
 <table class="resume-info">
     <tr>
         <td>Age</td>
-        <td class="value-col">35</td>
+        <td class="value-col">
+	{% assign birthdate = "1989-09-27" | date: "%s" %}
+        {% assign today = "now" | date: "%s" %}
+        {% assign seconds_in_year = 31557600 %}
+        {% assign age = today | minus: birthdate | divided_by: seconds_in_year | floor %}
+        {{ age }}
+	</td>
     </tr>
     <tr>
         <td>Location</td>
