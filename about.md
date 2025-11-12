@@ -25,7 +25,12 @@ layout: page
     </tr>
     <tr>
         <td>Experience</td>
-        <td class="value-col">14 years</td>
+        <td class="value-col">
+	{% assign workdate = "2007-03-01" | date: "%s" %}
+        {% assign today = "now" | date: "%s" %}
+        {% assign seconds_in_year = 31557600 %}
+        {% assign age = today | minus: workdate | divided_by: seconds_in_year | floor %}
+        {{ age }} years</td>
     </tr>
     <tr>
         <td>Tech stack</td>
