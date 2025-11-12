@@ -26,7 +26,7 @@ layout: page
     <tr>
         <td>Experience</td>
         <td class="value-col">
-	{% assign workdate = "2007-03-01" | date: "%s" %}
+	{% assign workdate = "2010-03-01" | date: "%s" %}
         {% assign today = "now" | date: "%s" %}
         {% assign seconds_in_year = 31557600 %}
         {% assign age = today | minus: workdate | divided_by: seconds_in_year | floor %}
@@ -117,6 +117,11 @@ _Spring / Liferay MVC; Qt Framework; C++; PHP; jQuery; PostgreSQL; Plone/Python;
 ---
 
 ### 🧰 PROJECTS
+* **3DAppStore - 3D Platform for delivering high-demanding games and apps in the browser** <br>
+2024 <br>
+<a href="https://www.nvidia.com/en-us/on-demand/session/gtc25-s71294/" target="_blank" rel="noreferer noopener">GTC 2025</a> <br>
+<a href="https://www.nvidia.com/en-us/on-demand/session/gtc24-s61443/" target="_blank" rel="noreferer noopener">GTC 2024</a> <br>
+Critical Techworks / BMW Group
 
 * **3Shorex - Plataforma de gestão e controlo das operações de shorex em zonas portuárias** <br>
 2023
