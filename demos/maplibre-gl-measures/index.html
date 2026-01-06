@@ -1,58 +1,669 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<title>MapLibre GL Measures - Full Demo</title>
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
+		<script src="https://unpkg.com/maplibre-gl-measures@latest/dist/maplibre-gl-measures.js"></script>
+		<link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel="stylesheet" />
+		<style>
+			* {
+				box-sizing: border-box;
+			}
 
-<head>
-    <meta charset="utf-8" />
-    <title>Getting Started</title>
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-    <script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
-    <script src="https://unpkg.com/maplibre-gl-measures@latest/dist/maplibre-gl-measures.js"></script>
-    <link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel="stylesheet" />
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+				overflow: hidden;
+			}
 
-        #map {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
+			#map {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				width: calc(100% - 360px);
+				left: 0;
+			}
 
-<body>
-    <div id="map"></div>
-    <script>
-        var map = new maplibregl.Map({
-            container: 'map', // container id
-            style: {
-                version: 8,
-                sources: {
-                    osm: {
-                        type: "raster",
-                        tiles: ["https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"],
-                        tileSize: 256,
-                        attribution: "&copy; OpenStreetMap Contributors",
-                        maxzoom: 19,
-                    },
-                },
-                glyphs: "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
-                layers: [
-                    {
-                        id: "osm",
-                        type: "raster",
-                        source: "osm", // This must match the source key above
-                    },
-                ],
-            },
-            center: [-8, 40], // starting position [lng, lat]
-            zoom: 15 // starting zoom
-        });
-        map.addControl(new maplibreGLMeasures.default({}), 'top-left');
-    </script>
-</body>
+			@media (max-width: 768px) {
+				#map {
+					width: 100%;
+				}
+			}
 
+			#sidebarToggle {
+				position: fixed;
+				top: 10px;
+				right: 10px;
+				z-index: 20;
+				background: white;
+				border: none;
+				border-radius: 4px;
+				padding: 10px 12px;
+				cursor: pointer;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+				font-size: 14px;
+				display: none;
+			}
+
+			@media (max-width: 768px) {
+				#sidebarToggle {
+					display: block;
+				}
+
+				#sidebarClose {
+					display: block;
+				}
+
+				#sidebarToggle.hidden {
+					display: none;
+				}
+
+				#controls {
+					right: 0;
+					left: auto;
+					transform: translateX(100%);
+					transition: transform 0.3s ease-in-out;
+					z-index: 15;
+				}
+
+				#controls.open {
+					transform: translateX(0);
+					z-index: 30;
+				}
+			}
+
+			.toast {
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				background: #10b981;
+				color: white;
+				padding: 12px 24px;
+				border-radius: 4px;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+				z-index: 1000;
+				display: none;
+				animation: slideIn 0.3s ease-out;
+			}
+
+			@keyframes slideIn {
+				from {
+					transform: translateY(100%);
+					opacity: 0;
+				}
+				to {
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+
+			.output-info {
+				font-family: 'Courier New', monospace;
+				font-size: 11px;
+				line-height: 1.4;
+				white-space: pre-wrap;
+				word-break: break-all;
+			}
+
+			input[type='range'] {
+				-webkit-appearance: none;
+				appearance: none;
+				height: 8px;
+				background: #e2e8f0;
+				border-radius: 4px;
+				outline: none;
+			}
+
+			input[type='range']::-webkit-slider-thumb {
+				-webkit-appearance: none;
+				appearance: none;
+				width: 18px;
+				height: 18px;
+				background: #d20c0c;
+				border-radius: 50%;
+				cursor: pointer;
+				transition: background 0.2s;
+			}
+
+			input[type='range']::-webkit-slider-thumb:hover {
+				background: #b00a0a;
+			}
+
+			input[type='range']::-moz-range-thumb {
+				width: 18px;
+				height: 18px;
+				background: #d20c0c;
+				border-radius: 50%;
+				cursor: pointer;
+				border: none;
+				transition: background 0.2s;
+			}
+
+			input[type='range']::-moz-range-thumb:hover {
+				background: #b00a0a;
+			}
+
+			.custom-scrollbar::-webkit-scrollbar {
+				width: 6px;
+			}
+
+			.custom-scrollbar::-webkit-scrollbar-track {
+				background: #f1f5f9;
+				border-radius: 3px;
+			}
+
+			.custom-scrollbar::-webkit-scrollbar-thumb {
+				background: #cbd5e1;
+				border-radius: 3px;
+			}
+
+			.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+				background: #94a3b8;
+			}
+
+			.pb-safe-bottom {
+				padding-bottom: max(1rem, env(safe-area-inset-bottom));
+			}
+		</style>
+	</head>
+
+	<body>
+		<button id="sidebarToggle" class="md:hidden">☰ Settings</button>
+
+		<div id="toast" class="toast">Settings copied to clipboard!</div>
+
+		<div id="controls" class="absolute top-0 right-0 w-[360px] h-screen bg-white shadow-xl flex flex-col" style="z-index: 25">
+			<div class="p-4 border-b border-slate-200 flex justify-between items-center flex-shrink-0">
+				<div>
+					<h1 class="text-xl font-bold text-slate-900">MapLibre Measures</h1>
+					<p class="text-sm text-slate-500 mt-1">Configure all plugin options</p>
+				</div>
+				<button id="sidebarClose" class="md:hidden text-slate-600 hover:text-slate-900 text-2xl leading-none">&times;</button>
+			</div>
+
+			<div class="p-4 space-y-6 overflow-y-auto custom-scrollbar flex-1 pb-safe-bottom">
+				<div class="space-y-3">
+					<h2 class="text-sm font-semibold text-slate-900 uppercase tracking-wider">General Settings</h2>
+
+					<div class="space-y-1">
+						<label class="text-sm font-medium text-slate-700">Unit System</label>
+						<select
+							id="units"
+							class="w-full px-3 py-2 text-sm border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors"
+						>
+							<option value="metric">Metric</option>
+							<option value="imperial">Imperial</option>
+						</select>
+					</div>
+
+					<div class="space-y-1">
+						<label class="text-sm font-medium text-slate-700">Fixed Length Unit</label>
+						<select
+							id="fixedLengthUnit"
+							class="w-full px-3 py-2 text-sm border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors"
+						>
+							<option value="">Auto</option>
+							<option value="mm">Millimeters (mm)</option>
+							<option value="cm">Centimeters (cm)</option>
+							<option value="m">Meters (m)</option>
+							<option value="km">Kilometers (km)</option>
+							<option value="in">Inches (in)</option>
+							<option value="ft">Feet (ft)</option>
+							<option value="yd">Yards (yd)</option>
+							<option value="mi">Miles (mi)</option>
+						</select>
+					</div>
+
+					<div class="space-y-1">
+						<label class="text-sm font-medium text-slate-700">Fixed Area Unit</label>
+						<select
+							id="fixedAreaUnit"
+							class="w-full px-3 py-2 text-sm border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors"
+						>
+							<option value="">Auto</option>
+							<option value="mm2">mm²</option>
+							<option value="cm2">cm²</option>
+							<option value="m2">m²</option>
+							<option value="km2">km²</option>
+							<option value="ha">Hectares (ha)</option>
+							<option value="in2">in²</option>
+							<option value="ft2">ft²</option>
+							<option value="yd2">yd²</option>
+							<option value="ac">Acres (ac)</option>
+							<option value="mi2">mi²</option>
+						</select>
+					</div>
+
+					<div class="space-y-1">
+						<label class="text-sm font-medium text-slate-700">Grouping Separator</label>
+						<input
+							type="text"
+							id="unitsGroupingSeparator"
+							placeholder="e.g., , or ."
+							class="w-full px-3 py-2 text-sm border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors"
+						/>
+					</div>
+
+					<div class="grid grid-cols-2 gap-3">
+						<div class="space-y-1">
+							<label class="text-sm font-medium text-slate-700">Min Fraction</label>
+							<input
+								type="number"
+								id="minimumFractionDigits"
+								value="2"
+								min="0"
+								max="10"
+								class="w-full px-3 py-2 text-sm border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors"
+							/>
+						</div>
+						<div class="space-y-1">
+							<label class="text-sm font-medium text-slate-700">Max Fraction</label>
+							<input
+								type="number"
+								id="maximumFractionDigits"
+								value="2"
+								min="0"
+								max="10"
+								class="w-full px-3 py-2 text-sm border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors"
+							/>
+						</div>
+					</div>
+
+					<div class="flex items-center space-x-2">
+						<input type="checkbox" id="showOnlyTotalLineLength" class="w-4 h-4 text-red-600 border-slate-300 rounded focus:ring-red-500" />
+						<label for="showOnlyTotalLineLength" class="text-sm text-slate-700">Show Total Line Length Only</label>
+					</div>
+				</div>
+
+				<div class="border-t border-slate-200 pt-4 space-y-3">
+					<h2 class="text-sm font-semibold text-slate-900 uppercase tracking-wider">Text Style</h2>
+
+					<div class="space-y-1">
+						<label class="text-sm font-medium text-slate-700">Font Family</label>
+						<input
+							type="text"
+							id="textFont"
+							value="Klokantech Noto Sans Bold"
+							class="w-full px-3 py-2 text-sm border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors"
+						/>
+					</div>
+
+					<div class="grid grid-cols-2 gap-3">
+						<div class="space-y-1">
+							<label class="text-sm font-medium text-slate-700">Text Color</label>
+							<div class="flex items-center space-x-2">
+								<input type="color" id="textColor" value="#D20C0C" class="w-10 h-8 rounded cursor-pointer border-0" />
+								<span id="textColorValue" class="text-xs text-slate-600 font-mono">#D20C0C</span>
+							</div>
+						</div>
+						<div class="space-y-1">
+							<label class="text-sm font-medium text-slate-700">Halo Color</label>
+							<div class="flex items-center space-x-2">
+								<input type="color" id="textHaloColor" value="#ffffff" class="w-10 h-8 rounded cursor-pointer border-0" />
+								<span id="textHaloColorValue" class="text-xs text-slate-600 font-mono">#ffffff</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="space-y-1">
+						<label class="text-sm font-medium text-slate-700">Halo Width: <span id="textHaloWidthValue" class="text-slate-600">10</span></label>
+						<input type="range" id="textHaloWidth" min="0" max="20" value="10" step="1" class="w-full" />
+					</div>
+
+					<div class="space-y-1">
+						<label class="text-sm font-medium text-slate-700">Letter Spacing: <span id="textLetterSpacingValue" class="text-slate-600">0.05</span></label>
+						<input type="range" id="textLetterSpacing" min="0" max="1" value="0.05" step="0.01" class="w-full" />
+					</div>
+
+					<div class="space-y-1">
+						<label class="text-sm font-medium text-slate-700">Radial Offset: <span id="textRadialOffsetValue" class="text-slate-600">0.5</span></label>
+						<input type="range" id="textRadialOffset" min="0" max="2" value="0.5" step="0.1" class="w-full" />
+					</div>
+				</div>
+
+				<div class="border-t border-slate-200 pt-4 space-y-3">
+					<h2 class="text-sm font-semibold text-slate-900 uppercase tracking-wider">Length Measurement</h2>
+
+					<div class="space-y-1">
+						<label class="text-sm font-medium text-slate-700">Line Color</label>
+						<div class="flex items-center space-x-2">
+							<input type="color" id="lengthLineColor" value="#D20C0C" class="w-10 h-8 rounded cursor-pointer border-0" />
+							<span id="lengthLineColorValue" class="text-xs text-slate-600 font-mono">#D20C0C</span>
+						</div>
+					</div>
+
+					<div class="space-y-1">
+						<label class="text-sm font-medium text-slate-700">Line Width: <span id="lengthLineWidthValue" class="text-slate-600">2</span></label>
+						<input type="range" id="lengthLineWidth" min="1" max="10" value="2" step="0.5" class="w-full" />
+					</div>
+				</div>
+
+				<div class="border-t border-slate-200 pt-4 space-y-3">
+					<h2 class="text-sm font-semibold text-slate-900 uppercase tracking-wider">Area Measurement</h2>
+
+					<div class="grid grid-cols-2 gap-3">
+						<div class="space-y-1">
+							<label class="text-sm font-medium text-slate-700">Fill Color</label>
+							<div class="flex items-center space-x-2">
+								<input type="color" id="areaFillColor" value="#000000" class="w-10 h-8 rounded cursor-pointer border-0" />
+								<span id="areaFillColorValue" class="text-xs text-slate-600 font-mono">#000000</span>
+							</div>
+						</div>
+						<div class="space-y-1">
+							<label class="text-sm font-medium text-slate-700">Outline Color</label>
+							<div class="flex items-center space-x-2">
+								<input type="color" id="areaOutlineColor" value="#000000" class="w-10 h-8 rounded cursor-pointer border-0" />
+								<span id="areaOutlineColorValue" class="text-xs text-slate-600 font-mono">#000000</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="space-y-1">
+						<label class="text-sm font-medium text-slate-700">Fill Opacity: <span id="areaFillOpacityValue" class="text-slate-600">0.1</span></label>
+						<input type="range" id="areaFillOpacity" min="0" max="1" value="0.1" step="0.05" class="w-full" />
+					</div>
+
+					<div class="space-y-1">
+						<label class="text-sm font-medium text-slate-700">Outline Width: <span id="areaOutlineWidthValue" class="text-slate-600">2</span></label>
+						<input type="range" id="areaOutlineWidth" min="1" max="10" value="2" step="0.5" class="w-full" />
+					</div>
+				</div>
+
+				<div class="border-t border-slate-200 pt-4 space-y-3">
+					<h2 class="text-sm font-semibold text-slate-900 uppercase tracking-wider">Common Style</h2>
+
+					<div class="grid grid-cols-2 gap-3">
+						<div class="space-y-1">
+							<label class="text-sm font-medium text-slate-700">Midpoint Color</label>
+							<div class="flex items-center space-x-2">
+								<input type="color" id="midPointColor" value="#fbb03b" class="w-10 h-8 rounded cursor-pointer border-0" />
+								<span id="midPointColorValue" class="text-xs text-slate-600 font-mono">#fbb03b</span>
+							</div>
+						</div>
+						<div class="space-y-1">
+							<label class="text-sm font-medium text-slate-700">Halo Color</label>
+							<div class="flex items-center space-x-2">
+								<input type="color" id="midPointHaloColor" value="#ffffff" class="w-10 h-8 rounded cursor-pointer border-0" />
+								<span id="midPointHaloColorValue" class="text-xs text-slate-600 font-mono">#ffffff</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="space-y-1">
+						<label class="text-sm font-medium text-slate-700">Midpoint Radius: <span id="midPointRadiusValue" class="text-slate-600">3</span></label>
+						<input type="range" id="midPointRadius" min="1" max="10" value="3" step="0.5" class="w-full" />
+					</div>
+
+					<div class="space-y-1">
+						<label class="text-sm font-medium text-slate-700">Halo Radius: <span id="midPointHaloRadiusValue" class="text-slate-600">3</span></label>
+						<input type="range" id="midPointHaloRadius" min="1" max="10" value="3" step="0.5" class="w-full" />
+					</div>
+				</div>
+
+				<div class="border-t border-slate-200 pt-4 space-y-3">
+					<h2 class="text-sm font-semibold text-slate-900 uppercase tracking-wider">Button Titles</h2>
+
+					<div class="space-y-1">
+						<label class="text-sm font-medium text-slate-700">Length Measurement</label>
+						<input
+							type="text"
+							id="lengthMeasurementButtonTitle"
+							value="Measure Length"
+							class="w-full px-3 py-2 text-sm border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors"
+						/>
+					</div>
+
+					<div class="space-y-1">
+						<label class="text-sm font-medium text-slate-700">Area Measurement</label>
+						<input
+							type="text"
+							id="areaMeasurementButtonTitle"
+							value="Measure Area"
+							class="w-full px-3 py-2 text-sm border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors"
+						/>
+					</div>
+
+					<div class="space-y-1">
+						<label class="text-sm font-medium text-slate-700">Clear Measurements</label>
+						<input
+							type="text"
+							id="clearMeasurementsButtonTitle"
+							value="Clear All"
+							class="w-full px-3 py-2 text-sm border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-colors"
+						/>
+					</div>
+				</div>
+
+				<div class="border-t border-slate-200 pt-4 space-y-3">
+					<h2 class="text-sm font-semibold text-slate-900 uppercase tracking-wider">Callbacks</h2>
+
+					<div class="flex items-center space-x-2">
+						<input type="checkbox" id="enableOnRender" checked class="w-4 h-4 text-red-600 border-slate-300 rounded focus:ring-red-500" />
+						<label for="enableOnRender" class="text-sm text-slate-700">Enable onRender Callback</label>
+					</div>
+
+					<div class="flex items-center space-x-2">
+						<input type="checkbox" id="enableOnCreate" checked class="w-4 h-4 text-red-600 border-slate-300 rounded focus:ring-red-500" />
+						<label for="enableOnCreate" class="text-sm text-slate-700">Enable onCreate Callback</label>
+					</div>
+				</div>
+
+				<div class="border-t border-slate-200 pt-4 space-y-3">
+					<h2 class="text-sm font-semibold text-slate-900 uppercase tracking-wider">Current Features</h2>
+					<div class="bg-slate-50 rounded-md p-3 border border-slate-200">
+						<div id="featuresOutput" class="output-info text-slate-700">Draw features to see them here...</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="p-4 border-t border-slate-200 space-y-2 flex-shrink-0">
+				<button
+					id="applyBtn"
+					class="w-full bg-red-600 hover:bg-red-700 text-white font-medium py-2.5 px-4 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+				>
+					Apply Changes
+				</button>
+				<button
+					id="copySettingsBtn"
+					class="w-full bg-slate-600 hover:bg-slate-700 text-white font-medium py-2.5 px-4 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2"
+				>
+					Copy Settings
+				</button>
+			</div>
+		</div>
+
+		<div id="map"></div>
+
+		<script>
+			let map;
+			let measuresControl;
+
+			function getOptions() {
+				return {
+					lang: {
+						lengthMeasurementButtonTitle: document.getElementById('lengthMeasurementButtonTitle').value,
+						areaMeasurementButtonTitle: document.getElementById('areaMeasurementButtonTitle').value,
+						clearMeasurementsButtonTitle: document.getElementById('clearMeasurementsButtonTitle').value,
+					},
+					units: document.getElementById('units').value,
+					unitsGroupingSeparator: document.getElementById('unitsGroupingSeparator').value || undefined,
+					minimumFractionDigits: parseInt(document.getElementById('minimumFractionDigits').value) || 2,
+					maximumFractionDigits: parseInt(document.getElementById('maximumFractionDigits').value) || 2,
+					fixedLengthUnit: document.getElementById('fixedLengthUnit').value || undefined,
+					fixedAreaUnit: document.getElementById('fixedAreaUnit').value || undefined,
+					showOnlyTotalLineLength: document.getElementById('showOnlyTotalLineLength').checked,
+					style: {
+						text: {
+							font: document.getElementById('textFont').value || 'Klokantech Noto Sans Bold',
+							color: document.getElementById('textColor').value,
+							haloColor: document.getElementById('textHaloColor').value,
+							haloWidth: parseFloat(document.getElementById('textHaloWidth').value),
+							letterSpacing: parseFloat(document.getElementById('textLetterSpacing').value),
+							radialOffset: parseFloat(document.getElementById('textRadialOffset').value),
+						},
+						lengthMeasurement: {
+							lineColor: document.getElementById('lengthLineColor').value,
+							lineWidth: parseFloat(document.getElementById('lengthLineWidth').value),
+						},
+						areaMeasurement: {
+							fillColor: document.getElementById('areaFillColor').value,
+							fillOpacity: parseFloat(document.getElementById('areaFillOpacity').value),
+							fillOutlineColor: document.getElementById('areaOutlineColor').value,
+							lineWidth: parseFloat(document.getElementById('areaOutlineWidth').value),
+						},
+						common: {
+							midPointColor: document.getElementById('midPointColor').value,
+							midPointRadius: parseFloat(document.getElementById('midPointRadius').value),
+							midPointHaloColor: document.getElementById('midPointHaloColor').value,
+							midPointHaloRadius: parseFloat(document.getElementById('midPointHaloRadius').value),
+						},
+					},
+					onRender: document.getElementById('enableOnRender').checked
+						? function (features) {
+								document.getElementById('featuresOutput').textContent = 'onRender triggered\nFeatures count: ' + features.features.length;
+							}
+						: undefined,
+					onCreate: document.getElementById('enableOnCreate').checked
+						? function (features) {
+								document.getElementById('featuresOutput').textContent = 'onCreate triggered\nFeatures count: ' + features.features.length;
+							}
+						: undefined,
+				};
+			}
+
+			function updateColorValue(inputId, valueId) {
+				document.getElementById(valueId).textContent = document.getElementById(inputId).value;
+			}
+
+			function updateRangeValue(inputId, valueId) {
+				document.getElementById(valueId).textContent = document.getElementById(inputId).value;
+			}
+
+			function initializeMap() {
+				map = new maplibregl.Map({
+					container: 'map',
+					style: {
+						version: 8,
+						sources: {
+							osm: {
+								type: 'raster',
+								tiles: ['https://a.tile.openstreetmap.org/{z}/{x}/{y}.png'],
+								tileSize: 256,
+								attribution: '&copy; OpenStreetMap Contributors',
+								maxzoom: 19,
+							},
+						},
+						glyphs: 'https://fonts.openmaptiles.org/{fontstack}/{range}.pbf',
+						layers: [
+							{
+								id: 'osm',
+								type: 'raster',
+								source: 'osm',
+							},
+						],
+					},
+					center: [-8, 40],
+					zoom: 15,
+				});
+
+				map.on('load', function () {
+					measuresControl = new maplibreGLMeasures.default(getOptions());
+					map.addControl(measuresControl, 'top-left');
+				});
+			}
+
+			function applyChanges() {
+				if (map) {
+					map.remove();
+				}
+				initializeMap();
+			}
+
+			function copySettings() {
+				const options = getOptions();
+				delete options.onRender;
+				delete options.onCreate;
+				const json = JSON.stringify(options, null, 2);
+				navigator.clipboard.writeText(json).then(() => {
+					const toast = document.getElementById('toast');
+					toast.style.display = 'block';
+					setTimeout(() => {
+						toast.style.display = 'none';
+					}, 2000);
+				});
+			}
+
+			document.addEventListener('DOMContentLoaded', function () {
+				initializeMap();
+
+				document.getElementById('applyBtn').addEventListener('click', applyChanges);
+				document.getElementById('copySettingsBtn').addEventListener('click', copySettings);
+
+				const sidebarToggle = document.getElementById('sidebarToggle');
+				const sidebarClose = document.getElementById('sidebarClose');
+				const controls = document.getElementById('controls');
+
+				// Force sidebar closed on load
+				controls.classList.remove('open');
+				controls.style.transform = '';
+				sidebarToggle.classList.remove('hidden');
+				sidebarToggle.style.display = '';
+
+				function updateButtonVisibility() {
+					if (controls.classList.contains('open')) {
+						sidebarToggle.classList.add('hidden');
+					} else {
+						sidebarToggle.classList.remove('hidden');
+					}
+				}
+
+				sidebarToggle.addEventListener('click', function () {
+					controls.classList.add('open');
+					updateButtonVisibility();
+				});
+
+				sidebarClose.addEventListener('click', function () {
+					controls.classList.remove('open');
+					updateButtonVisibility();
+				});
+
+				const colorInputs = [
+					['textColor', 'textColorValue'],
+					['textHaloColor', 'textHaloColorValue'],
+					['lengthLineColor', 'lengthLineColorValue'],
+					['areaFillColor', 'areaFillColorValue'],
+					['areaOutlineColor', 'areaOutlineColorValue'],
+					['midPointColor', 'midPointColorValue'],
+					['midPointHaloColor', 'midPointHaloColorValue'],
+				];
+
+				colorInputs.forEach(([inputId, valueId]) => {
+					document.getElementById(inputId).addEventListener('input', function () {
+						updateColorValue(inputId, valueId);
+					});
+				});
+
+				const rangeInputs = [
+					['textHaloWidth', 'textHaloWidthValue'],
+					['textLetterSpacing', 'textLetterSpacingValue'],
+					['textRadialOffset', 'textRadialOffsetValue'],
+					['lengthLineWidth', 'lengthLineWidthValue'],
+					['areaFillOpacity', 'areaFillOpacityValue'],
+					['areaOutlineWidth', 'areaOutlineWidthValue'],
+					['midPointRadius', 'midPointRadiusValue'],
+					['midPointHaloRadius', 'midPointHaloRadiusValue'],
+				];
+
+				rangeInputs.forEach(([inputId, valueId]) => {
+					document.getElementById(inputId).addEventListener('input', function () {
+						updateRangeValue(inputId, valueId);
+					});
+				});
+			});
+		</script>
+	</body>
 </html>
